@@ -7,7 +7,7 @@ grid=np.where(grid<100,0,1) #2値化
 N = grid.shape[0] 
 M = grid.shape[1]
 pil_img = Image.fromarray((grid*255).astype(np.uint8))
-pil_img.save('test.png')
+pil_img.save('test.png') #入力する画像
 #深さ優先探索
 def dfs(x,y):
     grid[x][y]=1 #現在の位置を1にする
